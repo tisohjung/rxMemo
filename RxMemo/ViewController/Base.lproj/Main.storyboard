@@ -27,7 +27,7 @@
         <!--New Memo-->
         <scene sceneID="vgA-RG-EA4">
             <objects>
-                <viewController id="AYR-or-17b" sceneMemberID="viewController">
+                <viewController id="AYR-or-17b" customClass="MemoComposeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XXq-az-jRk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
