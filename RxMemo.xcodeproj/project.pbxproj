@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F22D3E02619ED1F008F3938 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22D3DF2619ED1F008F3938 /* CommonViewModel.swift */; };
 		9F2E73442610C07A00746D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E73432610C07A00746D77 /* AppDelegate.swift */; };
 		9F2E73462610C07A00746D77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E73452610C07A00746D77 /* SceneDelegate.swift */; };
 		9F2E734B2610C07A00746D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2E73492610C07A00746D77 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		154823938CB1DE55E2F59E5A /* Pods-RxMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.debug.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9F22D3DF2619ED1F008F3938 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		9F2E73402610C07A00746D77 /* RxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2E73432610C07A00746D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F2E73452610C07A00746D77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				9F2E73842610CEA900746D77 /* MemoListViewModel.swift */,
 				9F2E73872610CEC700746D77 /* MemoDetailViewModel.swift */,
 				9F2E738A2610CEDA00746D77 /* MemoComposeViewModel.swift */,
+				9F22D3DF2619ED1F008F3938 /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				9F669C802617572C004A635C /* SceneCoordinatorType.swift in Sources */,
 				9F2E734E2610C07A00746D77 /* RxMemo.xcdatamodeld in Sources */,
 				9F2E73882610CEC700746D77 /* MemoDetailViewModel.swift in Sources */,
+				9F22D3E02619ED1F008F3938 /* CommonViewModel.swift in Sources */,
 				9F669C7A2617545F004A635C /* TransitionModel.swift in Sources */,
 				9F2E737C2610CDCF00746D77 /* MemoListViewController.swift in Sources */,
 				9F2E73822610CE4100746D77 /* MemoComposeViewController.swift in Sources */,
