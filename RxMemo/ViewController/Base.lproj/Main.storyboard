@@ -27,15 +27,39 @@
         <!--New Memo-->
         <scene sceneID="vgA-RG-EA4">
             <objects>
-                <viewController id="AYR-or-17b" customClass="MemoComposeViewController" sceneMemberID="viewController">
+                <viewController id="AYR-or-17b" customClass="MemoComposeViewController" customModule="RxMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XXq-az-jRk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="879-Gf-GcT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PLj-nI-FAw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="879-Gf-GcT" firstAttribute="top" secondItem="XXq-az-jRk" secondAttribute="top" id="Np1-fg-d0f"/>
+                            <constraint firstItem="879-Gf-GcT" firstAttribute="leading" secondItem="PLj-nI-FAw" secondAttribute="leading" id="SUR-ck-Y6C"/>
+                            <constraint firstItem="879-Gf-GcT" firstAttribute="trailing" secondItem="PLj-nI-FAw" secondAttribute="trailing" id="bO4-t3-gQk"/>
+                            <constraint firstAttribute="bottom" secondItem="879-Gf-GcT" secondAttribute="bottom" id="c2d-Bm-E06"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="New Memo" id="MeK-vU-U57"/>
+                    <navigationItem key="navigationItem" title="New Memo" id="MeK-vU-U57">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="WLv-9f-7Kb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="piK-gy-LXX"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="WLv-9f-7Kb" id="ZNA-jU-cpd"/>
+                        <outlet property="contentTextView" destination="879-Gf-GcT" id="ye5-gg-Xfq"/>
+                        <outlet property="saveButton" destination="piK-gy-LXX" id="wmA-fd-BwM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZS0-ZQ-4vw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,6 +174,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
