@@ -9,22 +9,22 @@ import UIKit
 
 class MemoDetailViewController: UIViewController, ViewModelBindableType {
     var viewModel: MemoDetailViewModel!
-    
-    @IBOutlet weak var listTableView: UITableView!
-    @IBOutlet weak var deleteButton: UIBarButtonItem!
-    @IBOutlet weak var editButton: UIBarButtonItem!
-    @IBOutlet weak var shareButton: UIBarButtonItem!
+
+    @IBOutlet var listTableView: UITableView!
+    @IBOutlet var deleteButton: UIBarButtonItem!
+    @IBOutlet var editButton: UIBarButtonItem!
+    @IBOutlet var shareButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
     func bindViewModel() {
         viewModel.title
             .drive(navigationItem.rx.title)
             .disposed(by: rx.disposeBag)
-        
+
         viewModel.contents
             .bind(to: listTableView.rx.items) {
                 tableView, row, value in
@@ -42,5 +42,13 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
                 }
             }
             .disposed(by: rx.disposeBag)
+
+//        var backButton = UIBarButtonItem(title: nil, style: UIBarButtonItem.Style.done, target: nil, action: nil)
+//        viewModel.title
+//            .drive(backButton.rx.title)
+//            .disposed(by: rx.disposeBag)
+//        backButton.rx.action = viewModel.popAction
+//        navigationItem.hidesBackButton = true
+//        navigationItem.leftBarButtonItem = backButton
     }
 }

@@ -23,7 +23,7 @@ class MemoDetailViewModel: CommonViewModel {
     
     var contents: BehaviorSubject<[String]>
     
-    init(memo: Memo, title: String, sceneCoordinator: SceneCoordinator, storage: MemoStorageType) {
+    init(memo: Memo, title: String, sceneCoordinator: SceneCoordinatorType, storage: MemoStorageType) {
         self.memo = memo
         
         contents = BehaviorSubject<[String]>(value: [
@@ -32,5 +32,9 @@ class MemoDetailViewModel: CommonViewModel {
         ])
         
         super.init(title: title, sceneCoordinator: sceneCoordinator, storage: storage)
+    }
+    
+    lazy var popAction = CocoaAction { [unowned self] in
+        return self.sceneCoordinator.close(animated: true).asObservable().map({ _ in })
     }
 }
