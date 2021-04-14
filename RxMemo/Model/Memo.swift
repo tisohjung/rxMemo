@@ -6,16 +6,17 @@
 //
 
 import Foundation
+import RxDataSources // tableview and collectionview bindable data source
 
-struct Memo: Equatable {
-    var id: String
+struct Memo: Equatable, IdentifiableType {
+    var identity: String
     var content: String
     var insertDate: Date
     
     init(content: String, insertDate: Date = Date()) {
         self.content = content
         self.insertDate = insertDate
-        self.id = "\(insertDate.timeIntervalSinceReferenceDate)"
+        self.identity = "\(insertDate.timeIntervalSinceReferenceDate)"
     }
     
     init(original: Memo, updatedContent: String) {
