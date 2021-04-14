@@ -46,6 +46,8 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
             .disposed(by: rx.disposeBag)
         
         editButton.rx.action = viewModel.makeEditAction()
+        
+        deleteButton.rx.action = viewModel.makeDeleteAction()
 
 //        var backButton = UIBarButtonItem(title: nil, style: UIBarButtonItem.Style.done, target: nil, action: nil)
 //        viewModel.title
