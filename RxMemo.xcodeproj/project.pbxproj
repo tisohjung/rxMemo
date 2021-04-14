@@ -28,6 +28,7 @@
 		9F669C7D261754BA004A635C /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F669C7C261754BA004A635C /* Scene.swift */; };
 		9F669C802617572C004A635C /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F669C7F2617572C004A635C /* SceneCoordinatorType.swift */; };
 		9F669C84261758ED004A635C /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F669C83261758ED004A635C /* SceneCoordinator.swift */; };
+		9FF572942626BD840009D96E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9FF572932626BD840009D96E /* README.md */; };
 		E58A80130BBEB8074E7F1D58 /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04FE8BB1509747849227AF4 /* Pods_RxMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		9F669C7C261754BA004A635C /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		9F669C7F2617572C004A635C /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		9F669C83261758ED004A635C /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		9FF572932626BD840009D96E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C04FE8BB1509747849227AF4 /* Pods_RxMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7E2C4D7625E8907A251BAA /* Pods-RxMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.release.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		9F2E73372610C07A00746D77 = {
 			isa = PBXGroup;
 			children = (
+				9FF572932626BD840009D96E /* README.md */,
 				9F2E73422610C07A00746D77 /* RxMemo */,
 				9F2E73412610C07A00746D77 /* Products */,
 				E09B6FD6651548F14DC96B0B /* Pods */,
@@ -253,6 +256,7 @@
 			files = (
 				9F2E73532610C07A00746D77 /* LaunchScreen.storyboard in Resources */,
 				9F2E73502610C07A00746D77 /* Assets.xcassets in Resources */,
+				9FF572942626BD840009D96E /* README.md in Resources */,
 				9F2E734B2610C07A00746D77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
